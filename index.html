@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Envio de Arquivos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<h2>Envio de Arquivos</h2>
+<div class="container">
+    <form id="enviar_arquivos" name="enviar_arquivos" enctype="multipart/form-data">
+        <input type="text" id="nome" name="nome" placeholder="Nome do arquivo"><br>
+        <label for="pasta" class="file-label">Selecionar arquivo:</label>
+        <input type="file" id="pasta" name="pasta">
+        <button type="button" onclick="anexoUpload()">Enviar anexo</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
